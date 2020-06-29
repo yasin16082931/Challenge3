@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="background" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- zo kan ik werken met json -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Landing</title>
+  </head>
+  <body>
+    <!-- navigatie bar en logo -->
+    <nav>
+      <div class="logo">
+        <img src="img/spaceX.svg" alt="">
+      </div>
+    </nav>
+    <!-- container die voor de layout zorgt -->
+    <div class="layout">
+      <!-- bovenste container -->
+      <div class="landing">
+        <div class="land-container">
+          <h1 id="land">LANDING SITE</h1>
+          <div class="input-container">
+            <p>SEARCH BY CITY</p>
+            <input id="cityName" type="text" name="" value="" placeholder="ANY CITY...">
+            <button id="btn" type="button" name="button">SEARCH</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- twee containers voor hello en hello vertaald naar de stad die je intyped -->
+      <div class="hallo">
+        <div class="trans-container">
+          <h1 class="translate">Hello</h1>
+        </div>
+      </div>
+
+      <div class="trans">
+        <div class="trans-container">
+          <h1 id="hallo" class="translate">Hello</h1>
+        </div>
+      </div>
+
+      <!-- weer container -->
+      <div class="results">
+        <div class="results-container">
+          <div class="result one">
+            <h2>TEMPERATURE</h2>
+            <h1 id="temp"></h1>
+          </div>
+          <div class="result two">
+              <h2>WIND</h2>
+              <h1 id="wind"></h1>
+          </div>
+          <div class="result three">
+              <h2>SIGHT</h2>
+              <h1 id="sight"></h1>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+  <script src="js/script.js" type="text/javascript">
+  </script>
+</html>
